@@ -99,6 +99,67 @@ header {
     color: var(--color-primary);
     text-decoration: underline;
   }
+
+  /* ===================================================
+   ENCABEZADO CON LOGO CIRCULAR
+   =================================================== */
+header {
+    background: linear-gradient(135deg, #1e5631, #2e6b3b);
+    color: #ffffff;
+    padding: 50px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  header .heroe {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo con el texto */
+    justify-content: center; /* Centra el contenido en pantallas anchas */
+    gap: 25px; /* Espacio entre el logo y los títulos */
+    flex-wrap: wrap; /* Permite que en celulares el logo quede arriba del texto */
+    text-align: center;
+  }
+  
+  /* Estilos para transformar la imagen cuadrada en un círculo perfecto */
+  header .logo-header {
+    width: 110px;
+    height: 110px;
+    object-fit: cover; /* Evita que la imagen se deforme o estire */
+    border-radius: 50%; /* Recorta la imagen en forma circular */
+    border: 3px solid #a2d5ab; /* Borde verde claro elegante */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Sombra suave para darle relieve */
+    margin: 0; /* Anula márgenes globales de imágenes */
+  }
+  
+  header .heroe-texto {
+    text-align: left; /* Alinea el texto a la izquierda en escritorio */
+  }
+  
+  header .heroe h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+  }
+  
+  header .heroe h2 {
+    font-size: 1.15rem;
+    color: #a2d5ab;
+    font-weight: 400;
+    opacity: 0.95;
+  }
+  
+  /* Adaptación para pantallas pequeñas / Celulares */
+  @media (max-width: 600px) {
+    header .heroe {
+      flex-direction: column;
+    }
+    header .heroe-texto {
+      text-align: center;
+    }
+  }
   
   /* Contenido Principal */
   section.main-content {
