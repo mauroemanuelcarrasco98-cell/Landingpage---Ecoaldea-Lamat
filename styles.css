@@ -35,6 +35,50 @@
     padding: 0;
     margin: 0;
   }
+
+  /* BENEFICIOS AGROFORESTALES */
+
+.agro-benefits {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.benefit-quote {
+    margin: 0;
+    padding: 22px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+}
+
+.benefit-quote p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.45;
+    font-weight: 600;
+    color: #172319;
+}
+
+/* Colores alternados */
+
+.quote-green {
+    background-color: #91c58b;
+}
+
+.quote-green-light {
+    background-color: #91b987;
+}
+
+.quote-beige {
+    background-color: #e9e1d8;
+}
   
  /* ===================================================
    ENCABEZADO / HÉROE (Ajuste de contraste)
